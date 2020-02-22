@@ -29,6 +29,30 @@ class QuestDetailViewController: UIViewController {
         setupUI()
     }
     
+    // MARK: - IBActions
+    
+    @IBAction func showLocationAction() {
+        if (UIApplication.shared.canOpenURL(URL(string: "comgooglemaps://")!)) {
+            UIApplication.shared.open(URL(
+                string: "comgooglemaps://?q=\(quest.address)")!,
+                options: [:],
+                completionHandler: nil
+            )
+        }
+        else{
+            if (UIApplication.shared.canOpenURL(URL(string:"http://maps.apple.com")!)) {
+                UIApplication.shared.open(URL(
+                    string: "http://maps.apple.com/?q=\(quest.address)")!,
+                    options: [:],
+                    completionHandler: nil
+                )
+            } else {
+                NSLog("Can't use Apple Maps");
+            }
+        }
+    }
+    
+    
     // MARK: - Private Methods
     
     private func setupUI() {
