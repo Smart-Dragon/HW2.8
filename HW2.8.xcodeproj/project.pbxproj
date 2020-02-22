@@ -18,6 +18,7 @@
 		9BAD8D3224016A4800DCE0AE /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D3124016A4800DCE0AE /* DevelopersViewController.swift */; };
 		9BAD8D352401712100DCE0AE /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D342401712100DCE0AE /* BarViewController.swift */; };
 		9BAD8D372401805A00DCE0AE /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D362401805A00DCE0AE /* Quest.swift */; };
+		9BAD8D3A24018DCA00DCE0AE /* QuestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D3924018DCA00DCE0AE /* QuestViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9BAD8D3124016A4800DCE0AE /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		9BAD8D342401712100DCE0AE /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 		9BAD8D362401805A00DCE0AE /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
+		9BAD8D3924018DCA00DCE0AE /* QuestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		9BAD8D14240161C200DCE0AE /* HW2.8 */ = {
 			isa = PBXGroup;
 			children = (
+				9BAD8D3824018D9600DCE0AE /* ViewCells */,
 				9BAD8D2E240169DB00DCE0AE /* DataManagers */,
 				9BAD8D2D240169CE00DCE0AE /* Models */,
 				9BAD8D2A240161FC00DCE0AE /* ViewControllers */,
@@ -112,6 +115,14 @@
 			children = (
 			);
 			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		9BAD8D3824018D9600DCE0AE /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD8D3924018DCA00DCE0AE /* QuestViewCell.swift */,
+			);
+			path = ViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				9BAD8D18240161C200DCE0AE /* SceneDelegate.swift in Sources */,
 				9BAD8D2C240169C400DCE0AE /* HelloViewController.swift in Sources */,
 				9BAD8D3024016A2E00DCE0AE /* QuestsViewController.swift in Sources */,
+				9BAD8D3A24018DCA00DCE0AE /* QuestViewCell.swift in Sources */,
 				9BAD8D352401712100DCE0AE /* BarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

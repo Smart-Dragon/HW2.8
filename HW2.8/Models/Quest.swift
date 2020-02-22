@@ -16,16 +16,16 @@ struct Quest {
     let image: String
 }
 
-enum Complexity: Int {
-    case elementary = 1
-    case easy = 2
-    case medium = 3
-    case hard = 4
-    case chaos = 5
+enum Complexity: String {
+    case elementary = "очень легко"
+    case easy = "легко"
+    case medium = "среней сложности"
+    case hard = "сложно"
+    case chaos = "очень сложно"
 }
 
 extension Quest {
-    var getQuests: [Quest] {
+    static var getQuests: [Quest] {
         return [
             Quest(
                 name: "Лавина забвения",
