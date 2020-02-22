@@ -19,6 +19,7 @@
 		9BAD8D352401712100DCE0AE /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D342401712100DCE0AE /* BarViewController.swift */; };
 		9BAD8D372401805A00DCE0AE /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D362401805A00DCE0AE /* Quest.swift */; };
 		9BAD8D3A24018DCA00DCE0AE /* QuestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D3924018DCA00DCE0AE /* QuestViewCell.swift */; };
+		9BAD8D3C2401AF9300DCE0AE /* QuestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D3B2401AF9300DCE0AE /* QuestDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9BAD8D342401712100DCE0AE /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 		9BAD8D362401805A00DCE0AE /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
 		9BAD8D3924018DCA00DCE0AE /* QuestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewCell.swift; sourceTree = "<group>"; };
+		9BAD8D3B2401AF9300DCE0AE /* QuestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				9BAD8D19240161C200DCE0AE /* StartViewController.swift */,
 				9BAD8D2B240169C400DCE0AE /* HelloViewController.swift */,
 				9BAD8D2F24016A2E00DCE0AE /* QuestsViewController.swift */,
+				9BAD8D3B2401AF9300DCE0AE /* QuestDetailViewController.swift */,
 				9BAD8D3124016A4800DCE0AE /* DevelopersViewController.swift */,
 				9BAD8D342401712100DCE0AE /* BarViewController.swift */,
 			);
@@ -204,6 +207,7 @@
 				9BAD8D2C240169C400DCE0AE /* HelloViewController.swift in Sources */,
 				9BAD8D3024016A2E00DCE0AE /* QuestsViewController.swift in Sources */,
 				9BAD8D3A24018DCA00DCE0AE /* QuestViewCell.swift in Sources */,
+				9BAD8D3C2401AF9300DCE0AE /* QuestDetailViewController.swift in Sources */,
 				9BAD8D352401712100DCE0AE /* BarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
