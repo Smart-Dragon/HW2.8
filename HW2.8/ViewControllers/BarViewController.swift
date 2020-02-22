@@ -10,6 +10,17 @@ import UIKit
 
 class BarViewController: UITabBarController {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: "",
+            style: .plain,
+            target: self,
+            action: nil
+        )
+    }
+    
     // MARK: - IBActions
     
     @IBAction func exitAction(_ sender: Any) {

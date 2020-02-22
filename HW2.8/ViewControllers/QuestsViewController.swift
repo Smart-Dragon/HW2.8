@@ -19,14 +19,15 @@ class QuestsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueDetail {
-            //let detailVC = segue.destination as! 
+            let detailVC = segue.destination as! QuestDetailViewController
+            detailVC.quest = quests[tableView.indexPathForSelectedRow!.row]
         }
     }
     
