@@ -39,7 +39,7 @@
 		9BAD8D362401805A00DCE0AE /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
 		9BAD8D3924018DCA00DCE0AE /* QuestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewCell.swift; sourceTree = "<group>"; };
 		9BAD8D3B2401AF9300DCE0AE /* QuestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetailViewController.swift; sourceTree = "<group>"; };
-		E279A4EB2401DB3B00FCFEA0 /* LanguagesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LanguagesDataManager.swift; path = HW2.8/LanguagesDataManager.swift; sourceTree = SOURCE_ROOT; };
+		E279A4EB2401DB3B00FCFEA0 /* LanguagesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LanguagesDataManager.swift; path = HW2.8/DataManagers/LanguagesDataManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
