@@ -14,6 +14,5 @@ class LanguagesDataManager {
 	
 	var greetings = ["Hi", "Hola", "Chao", "Aloha", "Hallo", "Shalom", "Buenas dias",
 					 "Guten Tag", "Dzien dobry", "Ola", "Здраво", "Dobry den",
-					 "Салам алейкум", "Привіт", "Bonjour", "Namaste", "Saluton",
-					 "Konnichi wa"]
+					 "Привіт", "Bonjour", "Namaste", "Saluton", "Konnichi wa"]
 }
