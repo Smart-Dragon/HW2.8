@@ -14,12 +14,15 @@ class HelloViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
+	
+	var nameLabelText = ""
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+  
+		userNameLabel.text = nameLabelText
     }
 
     // MARK: - IBActions
