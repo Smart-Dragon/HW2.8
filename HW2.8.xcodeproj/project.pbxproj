@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01351F832402759200C45BEF /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01351F822402759200C45BEF /* Developer.swift */; };
+		01351F8524027B4D00C45BEF /* DeveloperDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01351F8424027B4D00C45BEF /* DeveloperDataManager.swift */; };
 		9BAD8D16240161C200DCE0AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D15240161C200DCE0AE /* AppDelegate.swift */; };
 		9BAD8D18240161C200DCE0AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D17240161C200DCE0AE /* SceneDelegate.swift */; };
 		9BAD8D1A240161C200DCE0AE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D19240161C200DCE0AE /* StartViewController.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		01351F822402759200C45BEF /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		01351F8424027B4D00C45BEF /* DeveloperDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeveloperDataManager.swift; path = HW2.8/Models/DeveloperDataManager.swift; sourceTree = SOURCE_ROOT; };
 		9BAD8D12240161C200DCE0AE /* HW2.8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAD8D15240161C200DCE0AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BAD8D17240161C200DCE0AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		9BAD8D2E240169DB00DCE0AE /* DataManagers */ = {
 			isa = PBXGroup;
 			children = (
+				01351F8424027B4D00C45BEF /* DeveloperDataManager.swift */,
 			);
 			path = DataManagers;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01351F8524027B4D00C45BEF /* DeveloperDataManager.swift in Sources */,
 				9BAD8D372401805A00DCE0AE /* Quest.swift in Sources */,
 				9BAD8D1A240161C200DCE0AE /* StartViewController.swift in Sources */,
 				9BAD8D3224016A4800DCE0AE /* DevelopersViewController.swift in Sources */,
