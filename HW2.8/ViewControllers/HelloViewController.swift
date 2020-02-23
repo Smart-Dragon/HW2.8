@@ -22,7 +22,7 @@ class HelloViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-		  
+		
 		userNameLabel.text = nameLabelText
 		greeting.greetings.shuffle()
 		changeGreeting()
@@ -43,6 +43,13 @@ class HelloViewController: UIViewController {
 			index = 0
 			welcomeLabel.text = greeting.greetings[index]
 		}
-		
+		setupAnimation()
+	}
+	
+	func setupAnimation() {
+		welcomeLabel.alpha = 0
+		UILabel.animate(withDuration: 0.8, animations: {
+			self.welcomeLabel.alpha = 1
+		})
 	}
 }
