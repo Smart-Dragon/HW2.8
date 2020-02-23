@@ -10,6 +10,7 @@ struct Developer {
     let name: String
     let surname: String
     let avatarImage: String
+    let responsibility: String
     
     var fullname: String {
         "\(name) \(surname)"
@@ -25,7 +26,8 @@ extension Developer {
             
             let developer = Developer(name: DeveloperDataManager.shared.names[index],
                                       surname: DeveloperDataManager.shared.surnames[index],
-                                      avatarImage: DeveloperDataManager.shared.avatarImage[index])
+                                      avatarImage: DeveloperDataManager.shared.avatarImage[index],
+                                      responsibility: DeveloperDataManager.shared.responsibilities[index])
             developers.append(developer)
         }
         return developers

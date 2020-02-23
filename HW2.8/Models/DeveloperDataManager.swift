@@ -18,5 +18,7 @@ class DeveloperDataManager {
     
     let avatarImage = ["inna.jpg", "valeria.jpg", "alexey.jpg"]
     
+    let responsibilities = ["Разработчик 4 экрана", "Разработчик 2 экрана", "Разработчик 3 экрана"]
+    
 }
 
