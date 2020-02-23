@@ -24,7 +24,7 @@ class HelloViewController: UIViewController {
         super.viewDidLoad()
 		  
 		userNameLabel.text = nameLabelText
-//		greeting.greetings.shuffle()
+		greeting.greetings.shuffle()
 		changeGreeting()
     }
 
