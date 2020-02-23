@@ -18,6 +18,7 @@ class HelloViewController: UIViewController {
 	var nameLabelText = ""
 	var greeting = LanguagesDataManager.sharedGreetings
 	var index = 0
+	
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -35,14 +36,13 @@ class HelloViewController: UIViewController {
     }
 	
 	func changeGreeting() {
-		
-		if index < greeting.greetings.count {
-			welcomeLabel.text = greeting.greetings[index]
-			index += 1
-		} else {
+		if index == greeting.greetings.count {
 			index = 0
-			welcomeLabel.text = greeting.greetings[index]
 		}
+		
+		welcomeLabel.text = greeting.greetings[index]
+		index += 1
+		
 		setupAnimation()
 	}
 	
