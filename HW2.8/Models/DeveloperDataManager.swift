@@ -12,11 +12,11 @@ class DeveloperDataManager {
     
     static let shared = DeveloperDataManager()
     
-    var names = ["Inna", "Alexey", "Valeria"]
+    let names = ["Инна", "Валерия", "Алексей"]
     
-    var surnames = ["Lapteva", "Khristinina", "Alexey"]
+    let surnames = ["Лаптева", "Христинина", "Алексей"]
     
-    var avatarImage = ["745396026", "145036843", "287185656"]
+    let avatarImage = ["inna.jpg", "valeria.jpg", "alexey.jpg"]
     
 }
 
