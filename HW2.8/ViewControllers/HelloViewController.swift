@@ -16,19 +16,20 @@ class HelloViewController: UIViewController {
     @IBOutlet weak var userNameLabel: UILabel!
 	
 	var nameLabelText = ""
-    
+	var greeting = LanguagesDataManager.sharedGreetings
+	
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-  
+		  
 		userNameLabel.text = nameLabelText
+		welcomeLabel.text = greeting.greetings.first
     }
 
     // MARK: - IBActions
     
     @IBAction func changeWelcomeAction() {
-        
+		welcomeLabel.text = greeting.greetings.randomElement()
     }
-    
 }

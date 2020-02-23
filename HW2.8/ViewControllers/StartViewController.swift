@@ -26,7 +26,6 @@ class StartViewController: UIViewController {
 	
 	@IBAction func nextAction() {
 		let lenghtName = userNameTextField.text?.count as! Int
-		print(lenghtName)
 		if userNameTextField.text != "" && lenghtName >= 2 {
 			performSegue(withIdentifier: "ShowNext", sender: self)
 		} else if userNameTextField.text == "" {
@@ -40,10 +39,10 @@ class StartViewController: UIViewController {
 	
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		let navigationViewController = segue.destination as! UINavigationController
-		let barVC = navigationViewController.viewControllers.first as! BarViewController
+		let navigationVC = segue.destination as! UINavigationController
+		let barVC = navigationVC.viewControllers.first as! BarViewController
 		let helloVC = barVC.viewControllers?.first as! HelloViewController
-		helloVC.nameLabelText = userNameTextField.text ?? "Noname"
+		helloVC.nameLabelText = "\(userNameTextField.text ?? "Noname")!"
 	}
 
 	func clearTextFields() {
