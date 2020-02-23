@@ -17,19 +17,32 @@ class HelloViewController: UIViewController {
 	
 	var nameLabelText = ""
 	var greeting = LanguagesDataManager.sharedGreetings
-	
+	var index = 0
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 		  
 		userNameLabel.text = nameLabelText
-		welcomeLabel.text = greeting.greetings.first
+//		greeting.greetings.shuffle()
+		changeGreeting()
     }
 
     // MARK: - IBActions
     
     @IBAction func changeWelcomeAction() {
-		welcomeLabel.text = greeting.greetings.randomElement()
+		changeGreeting()
     }
+	
+	func changeGreeting() {
+		
+		if index < greeting.greetings.count {
+			welcomeLabel.text = greeting.greetings[index]
+			index += 1
+		} else {
+			index = 0
+			welcomeLabel.text = greeting.greetings[index]
+		}
+		
+	}
 }
