@@ -10,7 +10,7 @@ import Foundation
 
 
 class LanguagesDataManager {
-	static let sharedGreetings = LanguagesDataManager()
+	static let shared = LanguagesDataManager()
 	
 	var greetings = ["Hi", "Hola", "Chao", "Aloha", "Hallo", "Shalom", "Buenas dias",
 					 "Guten Tag", "Dzien dobry", "Ola", "Здраво", "Dobry den",

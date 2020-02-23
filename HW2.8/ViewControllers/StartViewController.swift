@@ -13,42 +13,30 @@ class StartViewController: UIViewController {
 	// MARK: - IBOutlets
 	
 	@IBOutlet weak var userNameTextField: UITextField!
-	
-	// MARK: - Lifecycle
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-	}
-	
-	
+
 	// MARK: - IBActions
 	
 	@IBAction func nextAction() {
-		let lenghtName = userNameTextField.text?.count as! Int
-		if userNameTextField.text != "" && lenghtName >= 2 {
-			performSegue(withIdentifier: "ShowNext", sender: self)
-		} else if userNameTextField.text == "" {
-			showAlert(with: "Ошибка!", and: "Введите ваше имя")
-			clearTextFields()
-		} else if lenghtName <= 2 {
-			showAlert(with: "Внимание!", and: "В имени должно быть больше одного символа")
-			clearTextFields()
+		if let textName = userNameTextField.text {
+			let lenghtName = textName.count
+			if textName == "" {
+				showAlert(with: "Ошибка!", and: "Введите ваше имя")
+			} else if lenghtName < 2 {
+				showAlert(with: "Внимание!", and: "В имени должно быть больше одного символа")
+			} else {
+				performSegue(withIdentifier: "ShowNext", sender: self)
+			}
 		}
 	}
-	
-	
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		let navigationVC = segue.destination as! UINavigationController
-		let barVC = navigationVC.viewControllers.first as! BarViewController
-		let helloVC = barVC.viewControllers?.first as! HelloViewController
-		helloVC.nameLabelText = "\(userNameTextField.text ?? "Noname")!"
-	}
 
-	func clearTextFields() {
-		userNameTextField.text = ""
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "ShowNext" {
+			let navigationVC = segue.destination as! UINavigationController
+			let barVC = navigationVC.viewControllers.first as! BarViewController
+			let helloVC = barVC.viewControllers?.first as! HelloViewController
+			helloVC.nameLabelText = "\(userNameTextField.text ?? "Noname")!"
+		}
 	}
-	
 }
 
 extension StartViewController {
