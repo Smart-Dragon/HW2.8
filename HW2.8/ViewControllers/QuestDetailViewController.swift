@@ -11,6 +11,7 @@ import UIKit
 class QuestDetailViewController: UIViewController {
 
     // MARK: - IBOutlets
+    
     @IBOutlet weak var questImageView: UIImageView!
     @IBOutlet weak var questPersonsLabel: UILabel!
     @IBOutlet weak var questTimeLabel: UILabel!

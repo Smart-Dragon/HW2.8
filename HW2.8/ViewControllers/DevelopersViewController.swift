@@ -10,14 +10,17 @@ import UIKit
 
 class DevelopersViewController: UITableViewController {
     
+    // MARK: - Private Properties
+    
     private let developers = Developer.getDevelopers()
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
-    
     }
     
     // MARK: - Table view data source
@@ -25,7 +28,6 @@ class DevelopersViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return developers.count
     }
-    
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
@@ -43,10 +45,9 @@ class DevelopersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "developerCell", for: indexPath)
-        
         let developer = developers[indexPath.section]
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "developerCell", for: indexPath)
         cell.textLabel?.text = developer.responsibility
         cell.textLabel?.numberOfLines = 0
         cell.imageView?.image = UIImage(named: developer.avatarImage)
@@ -57,6 +58,5 @@ class DevelopersViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         80
     }
-    
     
 }

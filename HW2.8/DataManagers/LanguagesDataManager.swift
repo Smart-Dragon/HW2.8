@@ -6,9 +6,6 @@
 //  Copyright © 2020 VIA. All rights reserved.
 //
 
-import Foundation
-
-
 class LanguagesDataManager {
 	static let shared = LanguagesDataManager()
 	

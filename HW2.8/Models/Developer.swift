@@ -19,9 +19,19 @@ struct Developer {
 
 extension Developer {
     static func getDevelopers() -> [Developer] {
-        
-       return [ Developer(name: "Инна", surname: "Лаптева", avatarImage: "inna", responsibility: "Разработчик раздела Разработчики"),
-                                        Developer(name: "Валерия", surname: "Христинина", avatarImage: "valeria", responsibility: "Разработчик раздела Приветствие"),
-                                        Developer(name: "Алексей", surname: "Маслобоев", avatarImage: "alexey", responsibility: "Разработчик раздела Квесты")]
+        return [
+            Developer(name: "Инна",
+                      surname: "Лаптева",
+                      avatarImage: "inna",
+                      responsibility: "Разработчик раздела \"Разработчики\""),
+            Developer(name: "Валерия",
+                      surname: "Христинина",
+                      avatarImage: "valeria",
+                      responsibility: "Разработчик раздела \"Приветствие\""),
+            Developer(name: "Алексей",
+                      surname: "Маслобоев",
+                      avatarImage: "alexey",
+                      responsibility: "Разработчик раздела \"Квесты\"")
+        ]
     }
 }

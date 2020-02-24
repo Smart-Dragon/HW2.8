@@ -53,4 +53,3 @@ extension StartViewController {
 		present(alert, animated: true)
 	}
 }
-
