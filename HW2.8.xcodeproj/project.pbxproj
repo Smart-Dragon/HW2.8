@@ -20,6 +20,7 @@
 		9BAD8D372401805A00DCE0AE /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D362401805A00DCE0AE /* Quest.swift */; };
 		9BAD8D3A24018DCA00DCE0AE /* QuestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D3924018DCA00DCE0AE /* QuestViewCell.swift */; };
 		9BAD8D3C2401AF9300DCE0AE /* QuestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8D3B2401AF9300DCE0AE /* QuestDetailViewController.swift */; };
+		E279A4EC2401DB3B00FCFEA0 /* LanguagesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279A4EB2401DB3B00FCFEA0 /* LanguagesDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9BAD8D362401805A00DCE0AE /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
 		9BAD8D3924018DCA00DCE0AE /* QuestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewCell.swift; sourceTree = "<group>"; };
 		9BAD8D3B2401AF9300DCE0AE /* QuestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetailViewController.swift; sourceTree = "<group>"; };
+		E279A4EB2401DB3B00FCFEA0 /* LanguagesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LanguagesDataManager.swift; path = HW2.8/DataManagers/LanguagesDataManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		9BAD8D2E240169DB00DCE0AE /* DataManagers */ = {
 			isa = PBXGroup;
 			children = (
+				E279A4EB2401DB3B00FCFEA0 /* LanguagesDataManager.swift */,
 			);
 			path = DataManagers;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				9BAD8D3224016A4800DCE0AE /* DevelopersViewController.swift in Sources */,
 				9BAD8D16240161C200DCE0AE /* AppDelegate.swift in Sources */,
 				9BAD8D18240161C200DCE0AE /* SceneDelegate.swift in Sources */,
+				E279A4EC2401DB3B00FCFEA0 /* LanguagesDataManager.swift in Sources */,
 				9BAD8D2C240169C400DCE0AE /* HelloViewController.swift in Sources */,
 				9BAD8D3024016A2E00DCE0AE /* QuestsViewController.swift in Sources */,
 				9BAD8D3A24018DCA00DCE0AE /* QuestViewCell.swift in Sources */,
