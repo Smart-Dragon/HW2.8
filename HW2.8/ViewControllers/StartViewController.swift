@@ -13,6 +13,8 @@ class StartViewController: UIViewController {
 	// MARK: - IBOutlets
 	
 	@IBOutlet weak var userNameTextField: UITextField!
+	
+	  private let segueShowNext = "ShowNext"
 
 	// MARK: - IBActions
 	
@@ -24,13 +26,13 @@ class StartViewController: UIViewController {
 			} else if lenghtName < 2 {
 				showAlert(with: "Внимание!", and: "В имени должно быть больше одного символа")
 			} else {
-				performSegue(withIdentifier: "ShowNext", sender: self)
+				performSegue(withIdentifier: segueShowNext, sender: self)
 			}
 		}
 	}
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "ShowNext" {
+		if segue.identifier == segueShowNext {
 			let navigationVC = segue.destination as! UINavigationController
 			let barVC = navigationVC.viewControllers.first as! BarViewController
 			let helloVC = barVC.viewControllers?.first as! HelloViewController
