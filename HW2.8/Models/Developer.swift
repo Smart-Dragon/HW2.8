@@ -20,9 +20,8 @@ struct Developer {
 extension Developer {
     static func getDevelopers() -> [Developer] {
         
-        var developers: [Developer] = [ Developer(name: "Инна", surname: "Лаптева", avatarImage: "inna.jpg", responsibility: "Разработчик раздела Разработчики"),
-                                        Developer(name: "Валерия", surname: "Христинина", avatarImage: "valeria.jpg", responsibility: "Разработчик раздела Приветствие"),
-                                        Developer(name: "Алексей", surname: "Маслобоев", avatarImage: "alexey.jpg", responsibility: "Разработчик раздела Квесты")]
-        return developers
+       return [ Developer(name: "Инна", surname: "Лаптева", avatarImage: "inna", responsibility: "Разработчик раздела Разработчики"),
+                                        Developer(name: "Валерия", surname: "Христинина", avatarImage: "valeria", responsibility: "Разработчик раздела Приветствие"),
+                                        Developer(name: "Алексей", surname: "Маслобоев", avatarImage: "alexey", responsibility: "Разработчик раздела Квесты")]
     }
 }

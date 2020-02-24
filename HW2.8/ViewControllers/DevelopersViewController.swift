@@ -10,14 +10,14 @@ import UIKit
 
 class DevelopersViewController: UITableViewController {
     
-    let developers = Developer.getDevelopers()
+    private let developers = Developer.getDevelopers()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
+    
     }
     
     // MARK: - Table view data source
