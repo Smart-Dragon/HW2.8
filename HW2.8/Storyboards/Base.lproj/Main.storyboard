@@ -40,19 +40,10 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPE-e2-dla">
-                                <rect key="frame" x="79" y="20" width="217" height="30"/>
-                                <state key="normal" title="Прямой переход (временный)"/>
-                                <connections>
-                                    <segue destination="wop-BE-7bP" kind="show" id="cxe-mp-BUN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sYn-eb-0MI" secondAttribute="trailing" constant="30" id="Hou-UA-Qkf"/>
-                            <constraint firstItem="HPE-e2-dla" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K4u-uk-AHw"/>
-                            <constraint firstItem="HPE-e2-dla" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Len-6B-jug"/>
                             <constraint firstItem="sYn-eb-0MI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Nem-3f-PPs"/>
                             <constraint firstItem="sYn-eb-0MI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pEg-ix-hQ4"/>
                         </constraints>
@@ -429,8 +420,5 @@
         <image name="rectangle.grid.1x2.fill" catalog="system" width="64" height="50"/>
         <image name="wrench" catalog="system" width="64" height="60"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="TYh-qd-QD2"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

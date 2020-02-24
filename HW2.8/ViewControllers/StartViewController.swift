@@ -14,7 +14,9 @@ class StartViewController: UIViewController {
 	
 	@IBOutlet weak var userNameTextField: UITextField!
 	
-	  private let segueShowNext = "ShowNext"
+    // MARK: - Private Properties
+    
+    private let segueShowNext = "ShowNext"
 
 	// MARK: - IBActions
 	
@@ -30,7 +32,9 @@ class StartViewController: UIViewController {
 			}
 		}
 	}
-
+    
+    // MARK: - Navigation
+    
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == segueShowNext {
 			let navigationVC = segue.destination as! UINavigationController

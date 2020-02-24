@@ -14,13 +14,6 @@ class QuestsViewController: UITableViewController {
     
     private let quests = Quest.getQuests
     private let segueDetail = "DetailQuest"
-    
-    // MARK: - Lifecycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
 
     // MARK: - Navigation
     

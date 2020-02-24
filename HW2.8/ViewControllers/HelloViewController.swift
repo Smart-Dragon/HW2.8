@@ -15,7 +15,12 @@ class HelloViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
 	
+    // MARK: - Public Properties
+    
 	var nameLabelText = ""
+    
+    // MARK: - Private Properties
+    
 	private var languageManager = LanguagesDataManager.shared
 	private var index = 0
 	
@@ -35,6 +40,8 @@ class HelloViewController: UIViewController {
 		changeGreeting()
     }
 	
+    // MARK: - Private Methods
+    
 	private func changeGreeting() {
 		if index == languageManager.greetings.count {
 			index = 0
