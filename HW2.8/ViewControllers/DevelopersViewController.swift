@@ -48,6 +48,7 @@ class DevelopersViewController: UITableViewController {
         let developer = developers[indexPath.section]
         
         cell.textLabel?.text = developer.responsibility
+        cell.textLabel?.numberOfLines = 0
         cell.imageView?.image = UIImage(named: developer.avatarImage)
         
         return cell
