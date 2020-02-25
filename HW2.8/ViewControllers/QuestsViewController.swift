@@ -12,17 +12,8 @@ class QuestsViewController: UITableViewController {
     
     // MARK: - Private Properties
     
-    private let quests = Quest.getQuests
+    private let quests = Quest.all
     private let segueDetail = "DetailQuest"
-
-    // MARK: - Navigation
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == segueDetail {
-            let detailVC = segue.destination as! QuestDetailViewController
-            detailVC.quest = quests[tableView.indexPathForSelectedRow!.row]
-        }
-    }
     
     // MARK: - Table view data source
 
@@ -38,6 +29,17 @@ class QuestsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         150
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueDetail {
+            let detailVC = segue.destination as! QuestDetailViewController
+            if let row = tableView.indexPathForSelectedRow?.row {
+                detailVC.quest = quests[row]
+            }
+        }
     }
     
 }

@@ -25,7 +25,7 @@ enum Complexity: String {
 }
 
 extension Quest {
-    static var getQuests: [Quest] {
+    static var all: [Quest] {
         return [
             Quest(
                 name: "Лавина забвения",

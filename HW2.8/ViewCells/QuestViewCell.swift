@@ -20,15 +20,19 @@ class QuestViewCell: UITableViewCell {
     // MARK: - Lifecycle
     
     override func awakeFromNib() {
+        super.awakeFromNib()
+        
         addGradient()
     }
     
     // MARK: - Public Methods
     
     func configureCell(quest: Quest) {
-        questImageView.image = UIImage(named: quest.image)!
         questNameLabel.text = quest.name
         questComplexityLabel.text = quest.complexity.rawValue
+        if let image = UIImage(named: quest.image) {
+            questImageView.image = image
+        }
     }
     
     // MARK: - Private Methods
